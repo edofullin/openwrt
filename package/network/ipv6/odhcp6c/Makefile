@@ -8,14 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=odhcp6c
-PKG_RELEASE:=18
+PKG_RELEASE:=19
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(PROJECT_GIT)/project/odhcp6c.git
-PKG_SOURCE_DATE:=2022-08-05
-PKG_SOURCE_VERSION:=7d21e8d8ecd6d776f64b6928f62893c0f5c9747a
-PKG_MIRROR_HASH:=6d918517de4ec47d83edddb6167bb52f08b2b696f336d5055a45290bb37ac4db
-PKG_MAINTAINER:=Hans Dedecker <dedeckeh@gmail.com>
+PKG_SOURCE_URL=https://github.com/edofullin/odhcp6c
+PKG_SOURCE_DATE:=2021-12-28
+PKG_SOURCE_VERSION:=084b3aa79fdd6e6a50153a0b47de5620f732f337
+PKG_MAINTAINER:=edofullin <edoardo.fullin@outlook.com>
 PKG_LICENSE:=GPL-2.0
 
 include $(INCLUDE_DIR)/package.mk
