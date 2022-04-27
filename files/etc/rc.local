@@ -4,4 +4,7 @@
 sysctl -w /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor=performance
 sysctl -w /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor=performance
 
+echo 2 > /proc/irq/36/smp_affinity
+echo 2 > /proc/irq/37/smp_affinity
+
 exit 0
