@@ -250,6 +250,7 @@ proto_map_setup() {
 
 	proto_send_update "$cfg"
 
+	fw4 -q reload 2>/dev/null
 	if [ "$maptype" = "lw4o6" -o "$maptype" = "map-e" ]; then
 		json_init
 		json_add_string name "${cfg}_"
